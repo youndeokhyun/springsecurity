@@ -4,6 +4,8 @@ package com.example.springsecurity.dto;
 import com.example.springsecurity.domain.entity.MemberEntity;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @ToString
@@ -14,6 +16,8 @@ public class MemberDto {
     private String email;
     private String password;
     private String nickname;
+    private LocalDateTime createdDate;
+    private LocalDateTime modifiedDate;
 
     public MemberEntity toEntity(){
         return MemberEntity.builder()

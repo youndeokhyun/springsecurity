@@ -44,8 +44,8 @@ public class MemberController {
     }
     //로그아웃 결과 페이지
     @GetMapping("/user/logout/result")
-    public String dispLogout(){
-        return "/logout"
+    public String dispLogout() {
+        return "/logout";
     }
 
     //접근 저부 페이지

@@ -44,7 +44,7 @@ public class MemberService implements UserDetailsService{
         MemberEntity userEntity = userEntityWrapper.get();
 
         List<GrantedAuthority> authorities = new ArrayList<>();
-        //롤(권한) 을 부여하는 코드 RoleEntity를 만들어 매핑
+        //롤(권한) 을 부여하는 코드
         if(("admin@example.com").equals(userEmail)) {
             authorities.add(new SimpleGrantedAuthority(Role.ADMIN.getValue()));
         }else{
